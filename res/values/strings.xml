@@ -742,7 +742,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
 
     <!-- The font-family to use for tab text.
          Do not translate. -->
-    <string name="tab_font_family">sans-serif</string>
+    <string name="tab_font_family" translatable="false">sans-serif</string>
 
     <!-- Attribution of a contact status update, when the time of update is unknown -->
     <string name="contact_status_update_attribution">via <xliff:g id="source" example="Google Talk">%1$s</xliff:g></string>
@@ -798,7 +798,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
     <string name="card_no_space">Card has no space ,some record copy failed</string>
     <!-- Font family used when drawing letters for letter tile avatars.
          Do not translate. -->
-    <string name="letter_tile_letter_font_family">sans-serif-medium</string>
+    <string name="letter_tile_letter_font_family" translatable="false">sans-serif-medium</string>
 
     <!-- Content description for the fake action menu up button as used
      inside search. [CHAR LIMIT=NONE] -->
@@ -809,7 +809,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
 
     <!-- The font-family to use for the text inside the searchbox.
          Do not translate. -->
-    <string name="search_font_family">sans-serif</string>
+    <string name="search_font_family" translatable="false">sans-serif</string>
 
     <!-- The title of the preference section that allows users to configure how they want their
          contacts to be displayed. [CHAR LIMIT=128] -->
