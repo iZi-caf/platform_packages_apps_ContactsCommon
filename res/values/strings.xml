@@ -847,7 +847,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
     <string name="call_with_a_note">Call with a note</string>
 
     <!-- Hint text shown in the call subject dialog. [CHAR LIMIT=255] -->
-    <string name="call_subject_hint">Type a note to send with call ...</string>
+    <string name="call_subject_hint">Type a note to send with call\u2026</string>
 
     <!-- Button used to start a new call with the user entered subject. [CHAR LIMIT=32] -->
     <string name="send_and_call_button">SEND &amp; CALL</string>
