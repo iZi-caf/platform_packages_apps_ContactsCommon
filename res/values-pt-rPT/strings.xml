@@ -204,6 +204,7 @@
   <string name="phoneLabelsGroup">Telefone</string>
   <!-- Header that expands to list all of the types of email addresses when editing or creating
          an email address for a contact [CHAR LIMIT=20] -->
+  <string name="emailLabelsGroup">Email</string>
   <!-- Header that expands to list all of the types of postal addresses when editing or creating
          an postal address for a contact [CHAR LIMIT=20] -->
   <string name="postalLabelsGroup">Endereço</string>
@@ -231,8 +232,10 @@
          about a contact -->
   <string name="label_notes">Notas</string>
   <!-- The label describing the SIP address field of a contact. [CHAR LIMIT=20] -->
+  <string name="label_sip_address">SIP</string>
   <!-- Header that expands to list all website types when editing a website of a contact
          [CHAR LIMIT=20] -->
+  <string name="websiteLabelsGroup">Site Web</string>
   <!-- Header for the list of all groups for a contact [CHAR LIMIT=20] -->
   <string name="groupsLabel">Grupos</string>
   <!-- Action string for sending an email to a home email address -->
@@ -286,6 +289,7 @@
   <!-- Action string for starting an IM chat with the Jabber protocol -->
   <string name="chat_jabber">Chat através do Jabber</string>
   <!-- Generic action string for starting an IM chat -->
+  <string name="chat">Chat</string>
   <!-- String describing the Contact Editor Minus button
 
          Used by AccessibilityService to announce the purpose of the button.
@@ -333,16 +337,21 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="listSingleContact">Contacto único</string>
   <string name="dialog_new_contact_account">Criar contacto na conta</string>
   <!-- Action string for managing SIM contacts -->
+  <string name="manage_sim_contacts"> Gerir os contactos do cartão SIM</string>
   <!-- Action that exports all contacts to SIM -->
+  <string name="export_to_sim">Exportar para o cartão SIM</string>
   <!-- Action string for selecting SIM for importing contacts -->
   <string name="import_from_sim">Importar do cartão SIM</string>
   <!-- Action string for selecting (USB) storage for importing contacts [CHAR LIMIT=30] -->
+  <string name="import_from_sdcard" product="default">Importar do armazenamento</string>
   <!-- Action string for selecting a SIM subscription for importing contacts -->
   <string name="import_from_sim_summary">Importar do SIM <xliff:g id="SIM_NAME">^1</xliff:g> – <xliff:g id="SIM_NUMBER">^2</xliff:g></string>
   <!-- Action string for selecting a SIM subscription for importing contacts, without a phone number -->
   <string name="import_from_sim_summary_no_number">Importar do SIM <xliff:g id="SIM_NAME">%1$s</xliff:g></string>
   <!-- Action string for selecting a SIM subscription for exporting contacts -->
+  <string name="export_to_sim_summary">Importar do SIM <xliff:g id="SIM_NAME">^1</xliff:g> – <xliff:g id="SIM_NUMBER">^2</xliff:g></string>
   <!-- Action string for selecting a SIM subscription for exporting contacts, without a phone number -->
+  <string name="export_to_sim_summary_no_number">Importar do SIM <xliff:g id="SIM_NAME">%1$s</xliff:g></string>
   <!-- Action string for selecting a .vcf file to import contacts from [CHAR LIMIT=30] -->
   <string name="import_from_vcf_file" product="default">Importar de ficheiro .vcf</string>
   <!-- Message shown in a Dialog confirming a user's cancel request toward existing vCard import.
@@ -387,6 +396,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
          emitted some I/O error. Exact reason will be appended by the system. [CHAR LIMIT=NONE] -->
   <string name="fail_reason_io_error">Erro de E/S</string>
   <!--The failed reason shown when importting some a vCard file -->
+  <string name="fail_reason_import_vcard">Erro, não é possível importar o vCard <xliff:g id="name">%s</xliff:g></string>
   <!-- Failure reason show when Contacts app (especially vCard importer) encountered
          low memory problem and could not proceed its import procedure. [CHAR LIMIT=NONE] -->
   <string name="fail_reason_low_memory_during_import">Memória insuficiente. O ficheiro pode ser demasiado grande.</string>
@@ -508,6 +518,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Action that exports all contacts to a user selected destination. [CHAR LIMIT=25] -->
   <string name="export_to_vcf_file" product="default">Exportar p/ ficheiro .vcf</string>
   <!-- Action that exports all contacts to (USB) storage [CHAR LIMIT=25] -->
+  <string name="export_to_sdcard" product="default">Exportar para o armazenamento</string>
   <!-- Contact preferences related strings -->
   <!-- Label of the "sort by" display option -->
   <string name="display_options_sort_list_by">Ordenar por</string>
@@ -532,6 +543,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Toast indicating that sharing a contact has failed. [CHAR LIMIT=NONE]  -->
   <string name="share_error">Não é possível partilhar este contacto.</string>
   <!-- Toast indicating that sharing too many contact has failed. [CHAR LIMIT=NONE]  -->
+  <string name="share_failed">Demasiados contactos, a partilha falhou</string>
   <!-- Menu item to search contacts -->
   <string name="menu_search">Pesquisar</string>
   <!-- The menu item to filter the list of contacts displayed -->
@@ -567,19 +579,43 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="menu_import_export">Importar/exportar</string>
   <!-- The font-family to use for tab text.
          Do not translate. -->
+  <string name="tab_font_family">sans-serif</string>
   <!-- Attribution of a contact status update, when the time of update is unknown -->
   <string name="contact_status_update_attribution">através do <xliff:g id="SOURCE">%1$s</xliff:g></string>
   <!-- Attribution of a contact status update, when the time of update is known -->
   <string name="contact_status_update_attribution_with_date"><xliff:g id="DATE">%1$s</xliff:g> através do <xliff:g id="SOURCE">%2$s</xliff:g></string>
+  <string name="label_groups">Grupo</string>
+  <string name="exporting">A Exportar</string>
   <!-- Message while reading multiple vCard files "(current number) of (total number) files"
           The order of "current number" and "total number" cannot be changed -->
+  <string name="reading_vcard_files"><xliff:g id="current_number">%1$s</xliff:g> de <xliff:g id="total_number">%2$s</xliff:g> ficheiros</string>
+  <string name="progressdialog_cancel">Cancelar</string>
+  <string name="export_to_sim_failed">Exportação cancelada, <xliff:g id="insertCount">%d</xliff:g>itens foram exportados</string>
+  <string name="export_sim_card_full">Cartão Sim é completo, <xliff:g id="insertCount">%d </xliff:g> itens são exportados</string>
+  <string name="export_failed">A exportação falhou</string>
+  <string name="sim_card_full">Erro, o cartão Sim está cheio.</string>
+  <string name="export_finished">Exportação terminada</string>
+  <string name="tag_too_long">Erro: O nome do contacto é muito longo.</string>
+  <string name="sim_contacts_not_load">Erro, os contactos do SIM não foram completamente carregados.</string>
+  <string name="export_cancelled">Exportação cancelada, <xliff:g id="insertCount">%s</xliff:g> itens foram exportados</string>
+  <string name="export_no_phone_or_email">A exportação falhou, <xliff:g id="name">%s</xliff:g> não tem número de telefone ou endereço de e-mail</string>
+  <string name="import_from_sim_select">Escolha o cartão para importar</string>
   <!-- Dialog title shown when (USB) storage does not exist [CHAR LIMIT=25] -->
+  <string name="no_sdcard_title" product="nosdcard">Armazenamento indisponível</string>
   <!-- Dialog title shown when SD Card does not exist -->
+  <string name="no_sdcard_title" product="default">Sem cartão SD</string>
   <!-- Confirmation dialog title after users selects to delete a contact. [CHAR LIMIT=25]-->
+  <string name="deleteConfirmation_title">Apagar contacto?</string>
   <!-- Confirmation dialog contents after users selects to delete a Writable contact. -->
+  <string name="deleteConfirmation">Este contacto será eliminado.</string>
   <!-- The slot common name -->
+  <string name="slot_name">SIM</string>
+  <string name="copy_done">Cópia feita！</string>
+  <string name="copy_failure">Falhou a cópia！</string>
+  <string name="card_no_space">O cartão não tem espaço, alguns dados da cópia falharam</string>
   <!-- Font family used when drawing letters for letter tile avatars.
          Do not translate. -->
+  <string name="letter_tile_letter_font_family">sans-serif-medium</string>
   <!-- Content description for the fake action menu up button as used
      inside search. [CHAR LIMIT=NONE] -->
   <string name="action_menu_back_from_search">parar de pesquisar</string>
@@ -587,6 +623,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="description_clear_search">Limpar pesquisa</string>
   <!-- The font-family to use for the text inside the searchbox.
          Do not translate. -->
+  <string name="search_font_family">sans-serif</string>
   <!-- The title of the preference section that allows users to configure how they want their
          contacts to be displayed. [CHAR LIMIT=128] -->
   <string name="settings_contact_display_options_title">Opções de visualização de contactos</string>
@@ -597,6 +634,20 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Title for dialog to select Phone Account for outgoing call.  [CHAR LIMIT=40] -->
   <string name="select_phone_account_for_calls">Ao telefone com</string>
   <!-- Menu item used to initiate ip call -->
+  <string name="ip_call_by_slot">Chamada IP por <xliff:g id="subName">%s</xliff:g></string>
+  <string name="set_ip_number">Colocar o número IP</string>
+  <string name="no_ip_number">Nenhum número IP</string>
+  <string name="no_ip_number_on_sim_card">Nenhum número IP no cartão SIM</string>
+  <string name="ipcall_dialog_title">Definição de chamada por IP</string>
+  <string name="ipcall_dialog_edit_hint">Por favor, insira o prefixo IP</string>
+  <string name="Import_All">Importar contactos de todos os cartões SIM</string>
+  <string name="select_path">Selecionar Caminho</string>
+  <string name="sd_card">Cartão SD</string>
+  <string name="phone_storage">Armazenamento do telefone</string>
+  <string name="select_sim">Selecionar SIM</string>
+  <string name="import_contacts_sim">Importar contactos do cartão SIM?</string>
+  <string name="import_contacts_sim_confirm">Importar</string>
+  <string name="import_contacts_sim_cancel">Cancelar</string>
   <!-- String used for actions in the dialer call log and the quick contact card to initiate
          a call to an individual.  The user is prompted to enter a note which is sent along with
          the call (e.g. a call subject). [CHAR LIMIT=40] -->
@@ -612,4 +663,9 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
          Example: Mobile • 650-555-1212  -->
   <string name="call_subject_type_and_number"><xliff:g id="TYPE">%1$s</xliff:g> • <xliff:g id="NUMBER">%2$s</xliff:g></string>
   <!-- video call  -->
+  <string name="video_call">Chamada de vídeo</string>
+  <string name="video_call_dialog_ok">Ok</string>
+  <string name="video_call_dialog_checkbox">"Não me relembrar"</string>
+  <string name="video_call_message_on"> Ao usar o Verizon Wireless rede 4G LTE, a porção de voz de uma chamada de vídeo irá aparecer na sua conta como uso de voz móvel, e a parte de vídeo será cobrada como dados. Quando a videochamada é ativada, outro pode ver que o seu telefone tem vídeo-chamadas. </string>
+  <string name="video_call_message_off"> Seu telefone não será capaz de fazer ou receber chamadas de vídeo quando você desativar essa configuração. </string>
 </resources>
