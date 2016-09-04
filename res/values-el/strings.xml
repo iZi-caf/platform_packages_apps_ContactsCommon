@@ -210,6 +210,7 @@
   <string name="postalLabelsGroup">Διεύθυνση</string>
   <!-- Header that expands to list all of the types of IM account when editing or creating an IM
          account for a contact [CHAR LIMIT=20] -->
+  <string name="imLabelsGroup">Ανταλλαγή άμεσων μηνυμάτων (IM)</string>
   <!-- Header that expands to list all organization types when editing an organization of a
          contact [CHAR LIMIT=20] -->
   <string name="organizationLabelsGroup">Οργανισμός</string>
@@ -231,6 +232,7 @@
          about a contact -->
   <string name="label_notes">Σημειώσεις</string>
   <!-- The label describing the SIP address field of a contact. [CHAR LIMIT=20] -->
+  <string name="label_sip_address">SIP</string>
   <!-- Header that expands to list all website types when editing a website of a contact
          [CHAR LIMIT=20] -->
   <string name="websiteLabelsGroup">Ιστότοπος</string>
@@ -335,16 +337,21 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="listSingleContact">Μία επαφή</string>
   <string name="dialog_new_contact_account">Δημιουργία επαφής στο λογαριασμό</string>
   <!-- Action string for managing SIM contacts -->
+  <string name="manage_sim_contacts"> Διαχείριση επαφών κάρτας SIM</string>
   <!-- Action that exports all contacts to SIM -->
+  <string name="export_to_sim">Εξαγωγή στην κάρτα SIM</string>
   <!-- Action string for selecting SIM for importing contacts -->
   <string name="import_from_sim">Εισαγωγή από κάρτα SIM</string>
   <!-- Action string for selecting (USB) storage for importing contacts [CHAR LIMIT=30] -->
+  <string name="import_from_sdcard" product="default">Εισαγωγή από τον χώρο αποθ</string>
   <!-- Action string for selecting a SIM subscription for importing contacts -->
   <string name="import_from_sim_summary">Εισαγωγή από κάρτα SIM <xliff:g id="SIM_NAME">^1</xliff:g> - <xliff:g id="SIM_NUMBER">^2</xliff:g></string>
   <!-- Action string for selecting a SIM subscription for importing contacts, without a phone number -->
   <string name="import_from_sim_summary_no_number">Εισαγωγή από κάρτα SIM <xliff:g id="SIM_NAME">%1$s</xliff:g></string>
   <!-- Action string for selecting a SIM subscription for exporting contacts -->
+  <string name="export_to_sim_summary">Εξαγωγή σε κάρτα SIM <xliff:g id="sim_name"> ^ 1 </xliff:g>-<xliff:g id="sim_number"> ^ 2 </xliff:g></string>
   <!-- Action string for selecting a SIM subscription for exporting contacts, without a phone number -->
+  <string name="export_to_sim_summary_no_number">Εξαγωγή σε κάρτα SIM <xliff:g id="sim_name">%1$s </xliff:g></string>
   <!-- Action string for selecting a .vcf file to import contacts from [CHAR LIMIT=30] -->
   <string name="import_from_vcf_file" product="default">Εισαγωγή από αρχείο .vcf</string>
   <!-- Message shown in a Dialog confirming a user's cancel request toward existing vCard import.
@@ -389,6 +396,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
          emitted some I/O error. Exact reason will be appended by the system. [CHAR LIMIT=NONE] -->
   <string name="fail_reason_io_error">Σφάλμα I/O</string>
   <!--The failed reason shown when importting some a vCard file -->
+  <string name="fail_reason_import_vcard">Σφάλμα εισόδου/εξόδου, δεν θα μπορείτε να εισάγετε vCard <xliff:g id="name">%s </xliff:g></string>
   <!-- Failure reason show when Contacts app (especially vCard importer) encountered
          low memory problem and could not proceed its import procedure. [CHAR LIMIT=NONE] -->
   <string name="fail_reason_low_memory_during_import">Δεν υπάρχει αρκετή μνήμη. Το αρχείο ενδέχεται να είναι πάρα πολύ μεγάλο.</string>
@@ -510,6 +518,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Action that exports all contacts to a user selected destination. [CHAR LIMIT=25] -->
   <string name="export_to_vcf_file" product="default">Εξαγωγή σε αρχείο .vcf</string>
   <!-- Action that exports all contacts to (USB) storage [CHAR LIMIT=25] -->
+  <string name="export_to_sdcard" product="default">Εξαγωγή στον αποθ. χώρο</string>
   <!-- Contact preferences related strings -->
   <!-- Label of the "sort by" display option -->
   <string name="display_options_sort_list_by">Ταξινόμηση κατά</string>
@@ -534,6 +543,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Toast indicating that sharing a contact has failed. [CHAR LIMIT=NONE]  -->
   <string name="share_error">Δεν είναι δυνατή η κοινή χρήση αυτής της επαφής.</string>
   <!-- Toast indicating that sharing too many contact has failed. [CHAR LIMIT=NONE]  -->
+  <string name="share_failed">Πάρα πολλές επαφές, η κοινή χρήση απέτυχε</string>
   <!-- Menu item to search contacts -->
   <string name="menu_search">Αναζήτηση</string>
   <!-- The menu item to filter the list of contacts displayed -->
@@ -573,13 +583,35 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="contact_status_update_attribution">μέσω <xliff:g id="SOURCE">%1$s</xliff:g></string>
   <!-- Attribution of a contact status update, when the time of update is known -->
   <string name="contact_status_update_attribution_with_date"><xliff:g id="DATE">%1$s</xliff:g> μέσω <xliff:g id="SOURCE">%2$s</xliff:g></string>
+  <string name="label_groups">Ομάδες</string>
+  <string name="exporting">Εξαγωγή</string>
   <!-- Message while reading multiple vCard files "(current number) of (total number) files"
           The order of "current number" and "total number" cannot be changed -->
+  <string name="reading_vcard_files"><xliff:g id="current_number">%1$s</xliff:g> of <xliff:g id="total_number">%2$s</xliff:g> αρχεία</string>
+  <string name="progressdialog_cancel">Ακύρωση</string>
+  <string name="export_to_sim_failed">Εξαγωγή απέτυχε, εξάγονται τα στοιχεία <xliff:g id="insertCount">%d </xliff:g></string>
+  <string name="export_sim_card_full">Η κάρτα Sim είναι πλήρη, εξάγονται <xliff:g id="insertCount">%d </xliff:g> στοιχεία</string>
+  <string name="export_failed">Η εξαγωγή απέτυχε</string>
+  <string name="sim_card_full">Σφάλμα, η κάρτα Sim είναι γεμάτη.</string>
+  <string name="export_finished">Η εξαγωγή ολοκληρώθηκε</string>
+  <string name="tag_too_long">Σφάλμα, το όνομα της επαφής είναι πολύ μεγάλο.</string>
+  <string name="sim_contacts_not_load">Σφάλμα, επαφές SIM δεν έχουν φορτωθεί τελείως.</string>
+  <string name="export_cancelled">Η εξαγωγή ακυρώνεται, εξάχθηκαν <xliff:g id="insertCount">%s </xliff:g></string>
+  <string name="export_no_phone_or_email">Η εξαγωγή απέτυχε, <xliff:g id="name">%s </xliff:g>δεν έχει αριθμό τηλεφώνου ή διεύθυνση ηλεκτρονικού ταχυδρομείου</string>
+  <string name="import_from_sim_select">Επιλέξτε κάρτα για εισαγωγή</string>
   <!-- Dialog title shown when (USB) storage does not exist [CHAR LIMIT=25] -->
+  <string name="no_sdcard_title" product="nosdcard">Ο αποθ. χώρος δεν είναι διαθέσιμος</string>
   <!-- Dialog title shown when SD Card does not exist -->
+  <string name="no_sdcard_title" product="default">Δεν υπάρχει κάρτα SD</string>
   <!-- Confirmation dialog title after users selects to delete a contact. [CHAR LIMIT=25]-->
+  <string name="deleteConfirmation_title">Διαγραφή επαφής;</string>
   <!-- Confirmation dialog contents after users selects to delete a Writable contact. -->
+  <string name="deleteConfirmation">Αυτή η επαφή θα διαγραφεί.</string>
   <!-- The slot common name -->
+  <string name="slot_name">SIM</string>
+  <string name="copy_done">Η αντιγραφή ολοκληρώθηκε！</string>
+  <string name="copy_failure">Η αντιγραφή απέτυχε！</string>
+  <string name="card_no_space">Η κάρτα δεν έχει χώρο, μερικά αντίγραφα απέτυχαν</string>
   <!-- Font family used when drawing letters for letter tile avatars.
          Do not translate. -->
   <!-- Content description for the fake action menu up button as used
@@ -599,6 +631,20 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Title for dialog to select Phone Account for outgoing call.  [CHAR LIMIT=40] -->
   <string name="select_phone_account_for_calls">Κλήση με</string>
   <!-- Menu item used to initiate ip call -->
+  <string name="ip_call_by_slot">Κλήση IP από <xliff:g id="subName">%s</xliff:g></string>
+  <string name="set_ip_number">Ορισμός Αριθμού IP</string>
+  <string name="no_ip_number">Κανένας αριθμός IP</string>
+  <string name="no_ip_number_on_sim_card">Κανένας αριθμός IP στην κάρτα SIM</string>
+  <string name="ipcall_dialog_title">Ρύθμιση κλήσεων IP</string>
+  <string name="ipcall_dialog_edit_hint">Παρακαλώ εισάγετε το πρόθεμα της IP</string>
+  <string name="Import_All">Εισαγωγή Επαφών Από Όλες τις SIM</string>
+  <string name="select_path">Επιλέξτε διαδρομή</string>
+  <string name="sd_card">Κάρτα SD</string>
+  <string name="phone_storage">Αποθηκευτικός χώρος συσκευής</string>
+  <string name="select_sim">Επιλέξτε SIM</string>
+  <string name="import_contacts_sim">Εισαγωγή επαφών από τη SIM;</string>
+  <string name="import_contacts_sim_confirm">Εισαγωγή</string>
+  <string name="import_contacts_sim_cancel">Ακύρωση</string>
   <!-- String used for actions in the dialer call log and the quick contact card to initiate
          a call to an individual.  The user is prompted to enter a note which is sent along with
          the call (e.g. a call subject). [CHAR LIMIT=40] -->
@@ -614,4 +660,9 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
          Example: Mobile • 650-555-1212  -->
   <string name="call_subject_type_and_number"><xliff:g id="TYPE">%1$s</xliff:g> • <xliff:g id="NUMBER">%2$s</xliff:g></string>
   <!-- video call  -->
+  <string name="video_call">Βιντεοκλήσεις</string>
+  <string name="video_call_dialog_ok">ΟΚ</string>
+  <string name="video_call_dialog_checkbox">"Μη μου το ξαναθυμίσεις"</string>
+  <string name="video_call_message_on"> Όταν χρησιμοποιείτε το Verizon Wireless δίκτυο 4G LTE, η μερίδα φωνής του μια κλήση βίντεο θα εμφανιστεί στο λογαριασμό σας ως φωνή κινητός-σε-κινητός χρήσης, και το τμήμα του βίντεο θα πρέπει να τιμολογείται ως δεδομένα. Όταν είναι ενεργοποιημένη η δυνατότητα βιντεοκλήσεων, άλλοι μπορεί να δει ότι το τηλέφωνό σας έχει δυνατότητα βιντεοκλήσεων. </string>
+  <string name="video_call_message_off"> Το τηλέφωνό σας δεν θα είναι σε θέση να πραγματοποιήσει ή να λάβει κλήσεις βίντεο όταν απενεργοποιείτε αυτή τη ρύθμιση. </string>
 </resources>

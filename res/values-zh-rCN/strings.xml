@@ -335,17 +335,21 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="listSingleContact">单个联系人</string>
   <string name="dialog_new_contact_account">在以下帐户中创建联系人：</string>
   <!-- Action string for managing SIM contacts -->
+  <string name="manage_sim_contacts">管理 SIM 卡联系人</string>
   <!-- Action that exports all contacts to SIM -->
   <string name="export_to_sim">导出到 SIM 卡</string>
   <!-- Action string for selecting SIM for importing contacts -->
   <string name="import_from_sim">从 SIM 卡导入</string>
   <!-- Action string for selecting (USB) storage for importing contacts [CHAR LIMIT=30] -->
+  <string name="import_from_sdcard" product="default">从存储设备导入</string>
   <!-- Action string for selecting a SIM subscription for importing contacts -->
   <string name="import_from_sim_summary">从 SIM 卡“<xliff:g id="SIM_NAME">^1</xliff:g>” - <xliff:g id="SIM_NUMBER">^2</xliff:g> 导入</string>
   <!-- Action string for selecting a SIM subscription for importing contacts, without a phone number -->
   <string name="import_from_sim_summary_no_number">从 SIM 卡“<xliff:g id="SIM_NAME">%1$s</xliff:g>”导入</string>
   <!-- Action string for selecting a SIM subscription for exporting contacts -->
+  <string name="export_to_sim_summary">导出到 SIM <xliff:g id="sim_name"> ^1 </xliff:g>-<xliff:g id="sim_number"> ^2 </xliff:g></string>
   <!-- Action string for selecting a SIM subscription for exporting contacts, without a phone number -->
+  <string name="export_to_sim_summary_no_number">导出到 SIM <xliff:g id="sim_name">%1$s </xliff:g></string>
   <!-- Action string for selecting a .vcf file to import contacts from [CHAR LIMIT=30] -->
   <string name="import_from_vcf_file" product="default">从 .vcf 文件导入</string>
   <!-- Message shown in a Dialog confirming a user's cancel request toward existing vCard import.
@@ -512,6 +516,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <!-- Action that exports all contacts to a user selected destination. [CHAR LIMIT=25] -->
   <string name="export_to_vcf_file" product="default">导出为 .vcf 文件</string>
   <!-- Action that exports all contacts to (USB) storage [CHAR LIMIT=25] -->
+  <string name="export_to_sdcard" product="default">导出到存储设备</string>
   <!-- Contact preferences related strings -->
   <!-- Label of the "sort by" display option -->
   <string name="display_options_sort_list_by">排序方式</string>
@@ -576,6 +581,7 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="contact_status_update_attribution">来源：<xliff:g id="SOURCE">%1$s</xliff:g></string>
   <!-- Attribution of a contact status update, when the time of update is known -->
   <string name="contact_status_update_attribution_with_date"><xliff:g id="DATE">%1$s</xliff:g>，来源：<xliff:g id="SOURCE">%2$s</xliff:g></string>
+  <string name="label_groups">群组</string>
   <string name="exporting">正在导出</string>
   <!-- Message while reading multiple vCard files "(current number) of (total number) files"
           The order of "current number" and "total number" cannot be changed -->
@@ -583,6 +589,8 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="progressdialog_cancel">取消</string>
   <string name="export_to_sim_failed">导出失败，<xliff:g id="insertCount">%d</xliff:g>条成功导出</string>
   <string name="export_sim_card_full">SIM卡已满，<xliff:g id="insertCount">%d</xliff:g>条成功导出</string>
+  <string name="export_failed">导出失败</string>
+  <string name="sim_card_full">发生错误，SIM卡已满。</string>
   <string name="export_finished">导出结束</string>
   <string name="tag_too_long">发生错误，联系人姓名过长。</string>
   <string name="sim_contacts_not_load">发生错误，SIM卡联系人未完全加载</string>
@@ -627,9 +635,14 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
   <string name="no_ip_number_on_sim_card">SIM卡上没有IP号</string>
   <string name="ipcall_dialog_title">IP电话设置</string>
   <string name="ipcall_dialog_edit_hint">请输入IP电话前缀</string>
+  <string name="Import_All">从所有 SIM 卡导入联系人</string>
   <string name="select_path">请选择路径</string>
   <string name="sd_card">SD 卡</string>
   <string name="phone_storage">手机内存</string>
+  <string name="select_sim">选择 SIM 卡</string>
+  <string name="import_contacts_sim">从 sim 卡导入联系人？</string>
+  <string name="import_contacts_sim_confirm">导入</string>
+  <string name="import_contacts_sim_cancel">取消</string>
   <!-- String used for actions in the dialer call log and the quick contact card to initiate
          a call to an individual.  The user is prompted to enter a note which is sent along with
          the call (e.g. a call subject). [CHAR LIMIT=40] -->
@@ -645,4 +658,9 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
          Example: Mobile • 650-555-1212  -->
   <string name="call_subject_type_and_number"><xliff:g id="TYPE">%1$s</xliff:g> • <xliff:g id="NUMBER">%2$s</xliff:g></string>
   <!-- video call  -->
+  <string name="video_call">视频通话</string>
+  <string name="video_call_dialog_ok">确定</string>
+  <string name="video_call_dialog_checkbox">"不要再提醒我"</string>
+  <string name="video_call_message_on">当使用 Verizon 无线 4g LTE 网络，视频通话的声音部分将出现在您的账单手机到手机语音用法，和视频的部分将被誉为数据。当视频通话打开的时对方可以看到您的手机有视频通话。</string>
+  <string name="video_call_message_off">您的电话不能拨打或接听视频通话，当您关闭此设置。</string>
 </resources>
